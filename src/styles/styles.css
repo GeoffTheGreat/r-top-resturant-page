@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+}
+#tabNavigation {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 5px;
+  /* justify-self: center; */
+  align-self: center;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+}
+.tabNav {
+  padding: 10px;
+}
