@@ -1,5 +1,7 @@
 // imports
+import mjLeaf from "./assets/mj.svg";
 import "./styles/styles.css";
+import index from "./index.js";
 
 ///get the main dom element #container
 const pageContainer = document.getElementById("container");
@@ -27,3 +29,51 @@ pageContainer.appendChild(tabSelect);
 ///content section
 const contentContainer = document.createElement("div");
 contentContainer.setAttribute("id", "contentContainer");
+pageContainer.appendChild(contentContainer);
+
+///footer
+const footer = document.createElement("div");
+footer.setAttribute("id", "footer");
+const footerContent = document.createElement("p");
+footerContent.textContent = "created by Timothy";
+footer.appendChild(footerContent);
+pageContainer.appendChild(footer);
+//event listeners
+homeTab.addEventListener("click", homePage);
+menuTab.addEventListener("click", menuPage);
+contactTab.addEventListener("click", contactPage);
+
+homePage();
+function homePage() {
+  setFocus(homeTab);
+  removeFocus(menuTab);
+  removeFocus(contactTab);
+  if (contentContainer.childElementCount > 0) {
+    const content = document.querySelector(".content");
+    contentContainer.removeChild(content);
+  }
+  contentContainer.appendChild(index());
+}
+
+function menuPage() {
+  setFocus(menuTab);
+  removeFocus(homeTab);
+  removeFocus(contactTab);
+  if (contentContainer.childElementCount > 0) {
+    const content = document.querySelector(".content");
+    contentContainer.removeChild(content);
+  }
+}
+
+function contactPage() {
+  setFocus(contactTab);
+  removeFocus(menuTab);
+  removeFocus(homeTab);
+}
+
+function setFocus(tab) {
+  tab.classList.add("currentTab");
+}
+function removeFocus(tab) {
+  tab.classList.remove("currentTab");
+}

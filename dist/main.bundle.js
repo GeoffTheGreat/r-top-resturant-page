@@ -16,12 +16,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/mj.svg */ "./src/assets/mj.svg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap);"]);
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap);"]);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n}\n\n#container {\n  display: flex;\n  flex-direction: column;\n}\n#tabNavigation {\n  display: grid;\n  grid-template-columns: repeat(3, auto);\n  gap: 5px;\n  /* justify-self: center; */\n  align-self: center;\n}\n", "",{"version":3,"sources":["webpack://./src/styles/styles.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;AACZ;;AAEA;EACE,aAAa;EACb,sBAAsB;AACxB;AACA;EACE,aAAa;EACb,sCAAsC;EACtC,QAAQ;EACR,0BAA0B;EAC1B,kBAAkB;AACpB","sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n}\n\n#container {\n  display: flex;\n  flex-direction: column;\n}\n#tabNavigation {\n  display: grid;\n  grid-template-columns: repeat(3, auto);\n  gap: 5px;\n  /* justify-self: center; */\n  align-self: center;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\n  --cardGreen: #80d980;\n  --veryLightGreen: #ccf0cc;\n  --mjLightGreen: #00b200;\n  --mjDarkGreen: #009700;\n}\n* {\n  margin: 0;\n  padding: 0;\n}\n\n#container {\n  display: flex;\n  flex-direction: column;\n  background-color: var(--veryLightGreen);\n}\n#tabNavigation {\n  display: grid;\n  grid-template-columns: repeat(3, auto);\n  gap: 5px;\n  min-height: 8vh;\n  justify-content: center;\n\n  position: sticky;\n  top: 0;\n  background-color: var(--mjDarkGreen);\n  color: #000800;\n  font-family: \"Permanent Marker\", sans-serif;\n}\n.tabNav {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100%;\n  padding: 0 16px;\n  cursor: pointer;\n}\n.tabNav:hover {\n  background-color: var(--mjLightGreen);\n  color: black;\n}\n#footer {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n\n  min-height: 6.5vh;\n\n  background-color: var(--mjDarkGreen);\n  font-family: \"Permanent Marker\", sans-serif;\n  padding: 5px;\n}\n.currentTab {\n  background-color: var(--mjLightGreen);\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  background-repeat: no-repeat;\n  background-position: center;\n}\n#contentContainer {\n  font-family: \"Roboto Flex\";\n  font-weight: 400;\n  min-height: 84vh;\n}\n.content {\n  width: 80%;\n  margin: 10px auto;\n  text-align: center;\n  background-color: var(--cardGreen);\n  border-radius: 10px;\n  border: 2px double #000800;\n  padding: 20px;\n}\n.restName {\n  font-family: \"Permanent Marker\", sans-serif;\n  margin-bottom: 20px;\n}\n.about p,\n.about h3 {\n  margin-bottom: 10px;\n}\n", "",{"version":3,"sources":["webpack://./src/styles/styles.css"],"names":[],"mappings":"AAAA;EACE,oBAAoB;EACpB,yBAAyB;EACzB,uBAAuB;EACvB,sBAAsB;AACxB;AAGA;EACE,SAAS;EACT,UAAU;AACZ;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,uCAAuC;AACzC;AACA;EACE,aAAa;EACb,sCAAsC;EACtC,QAAQ;EACR,eAAe;EACf,uBAAuB;;EAEvB,gBAAgB;EAChB,MAAM;EACN,oCAAoC;EACpC,cAAc;EACd,2CAA2C;AAC7C;AACA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,YAAY;EACZ,eAAe;EACf,eAAe;AACjB;AACA;EACE,qCAAqC;EACrC,YAAY;AACd;AACA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;;EAEnB,iBAAiB;;EAEjB,oCAAoC;EACpC,2CAA2C;EAC3C,YAAY;AACd;AACA;EACE,qCAAqC;EACrC,yDAAyC;EACzC,4BAA4B;EAC5B,2BAA2B;AAC7B;AACA;EACE,0BAA0B;EAC1B,gBAAgB;EAChB,gBAAgB;AAClB;AACA;EACE,UAAU;EACV,iBAAiB;EACjB,kBAAkB;EAClB,kCAAkC;EAClC,mBAAmB;EACnB,0BAA0B;EAC1B,aAAa;AACf;AACA;EACE,2CAA2C;EAC3C,mBAAmB;AACrB;AACA;;EAEE,mBAAmB;AACrB","sourcesContent":[":root {\n  --cardGreen: #80d980;\n  --veryLightGreen: #ccf0cc;\n  --mjLightGreen: #00b200;\n  --mjDarkGreen: #009700;\n}\n@import url(\"https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap\");\n@import url(\"https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap\");\n* {\n  margin: 0;\n  padding: 0;\n}\n\n#container {\n  display: flex;\n  flex-direction: column;\n  background-color: var(--veryLightGreen);\n}\n#tabNavigation {\n  display: grid;\n  grid-template-columns: repeat(3, auto);\n  gap: 5px;\n  min-height: 8vh;\n  justify-content: center;\n\n  position: sticky;\n  top: 0;\n  background-color: var(--mjDarkGreen);\n  color: #000800;\n  font-family: \"Permanent Marker\", sans-serif;\n}\n.tabNav {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100%;\n  padding: 0 16px;\n  cursor: pointer;\n}\n.tabNav:hover {\n  background-color: var(--mjLightGreen);\n  color: black;\n}\n#footer {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n\n  min-height: 6.5vh;\n\n  background-color: var(--mjDarkGreen);\n  font-family: \"Permanent Marker\", sans-serif;\n  padding: 5px;\n}\n.currentTab {\n  background-color: var(--mjLightGreen);\n  background-image: url(\"../assets/mj.svg\");\n  background-repeat: no-repeat;\n  background-position: center;\n}\n#contentContainer {\n  font-family: \"Roboto Flex\";\n  font-weight: 400;\n  min-height: 84vh;\n}\n.content {\n  width: 80%;\n  margin: 10px auto;\n  text-align: center;\n  background-color: var(--cardGreen);\n  border-radius: 10px;\n  border: 2px double #000800;\n  padding: 20px;\n}\n.restName {\n  font-family: \"Permanent Marker\", sans-serif;\n  margin-bottom: 20px;\n}\n.about p,\n.about h3 {\n  margin-bottom: 10px;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -135,6 +142,44 @@ module.exports = function (cssWithMappingToString) {
   };
 
   return list;
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    options = {};
+  }
+
+  if (!url) {
+    return url;
+  }
+
+  url = String(url.__esModule ? url.default : url); // If url is already wrapped in quotes, remove them
+
+  if (/^['"].*['"]$/.test(url)) {
+    url = url.slice(1, -1);
+  }
+
+  if (options.hash) {
+    url += options.hash;
+  } // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+
+
+  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
+  }
+
+  return url;
 };
 
 /***/ }),
@@ -528,6 +573,75 @@ function styleTagTransform(css, styleElement) {
 
 module.exports = styleTagTransform;
 
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function index() {
+  const content = document.createElement("div");
+  content.setAttribute("class", "content");
+  //restaurant name
+  const restName = document.createElement("h1");
+  restName.classList.add("restName");
+  restName.textContent = "The House of Jol and Zol";
+  content.appendChild(restName);
+
+  //about content
+  const about = document.createElement("div");
+  about.classList.add("about");
+  //who are we heading
+  const whoAreWeHeading = document.createElement("h3");
+  whoAreWeHeading.textContent = "Who are we?";
+  about.appendChild(whoAreWeHeading);
+  //who are we content
+  const whoAreWeContent = document.createElement("p");
+  whoAreWeContent.textContent =
+    "The House of Jol and Zol, is an establishment that specializes in the art of using cannabis. We were formed in 2010 as a mere dream but since the decriminalization of the plant in 2018 we have established ourselves as the most exquisite eatery in South Africa.";
+  about.appendChild(whoAreWeContent);
+  //what do we do heading
+  const whatWeDoHeading = document.createElement("h3");
+  whatWeDoHeading.textContent = "What We Do?";
+  about.appendChild(whatWeDoHeading);
+  //what We Do content
+  const whatWeDoContent = document.createElement("p");
+  whatWeDoContent.textContent =
+    "We provide our customers access to our private space, where they can order some of the best cbd/thc infused cuisine in the southern hemisphere.";
+  about.appendChild(whatWeDoContent);
+  //why us heading
+  const whyUsHeading = document.createElement("h3");
+  whyUsHeading.textContent = "Why us?";
+  about.appendChild(whyUsHeading);
+  //why us content
+  const whyUsContent = document.createElement("p");
+  whyUsContent.textContent =
+    "We provide our customers with a safe place where they can relax and enjoy our services";
+  about.appendChild(whyUsContent);
+
+  content.appendChild(about);
+  return content;
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (index);
+
+
+/***/ }),
+
+/***/ "./src/assets/mj.svg":
+/*!***************************!*\
+  !*** ./src/assets/mj.svg ***!
+  \***************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "mj.svg";
+
 /***/ })
 
 /******/ 	});
@@ -556,6 +670,9 @@ module.exports = styleTagTransform;
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -581,6 +698,18 @@ module.exports = styleTagTransform;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -597,6 +726,52 @@ module.exports = styleTagTransform;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"main": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/nonce */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nc = undefined;
@@ -610,8 +785,12 @@ var __webpack_exports__ = {};
   !*** ./src/main.js ***!
   \*********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/styles.css */ "./src/styles/styles.css");
+/* harmony import */ var _assets_mj_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/mj.svg */ "./src/assets/mj.svg");
+/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/styles.css */ "./src/styles/styles.css");
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.js */ "./src/index.js");
 // imports
+
+
 
 
 ///get the main dom element #container
@@ -622,18 +801,72 @@ const tabSelect = document.createElement("div");
 tabSelect.setAttribute("id", "tabNavigation");
 const homeTab = document.createElement("div");
 homeTab.setAttribute("id", "homeTab");
+homeTab.classList.add("tabNav");
 homeTab.innerText = "Home";
 const menuTab = document.createElement("div");
 menuTab.setAttribute("id", "menuTab");
+menuTab.classList.add("tabNav");
 menuTab.textContent = "Menu";
 const contactTab = document.createElement("div");
 contactTab.setAttribute("id", "contactTab");
+contactTab.classList.add("tabNav");
 contactTab.textContent = "Contact";
 tabSelect.appendChild(homeTab);
 tabSelect.appendChild(menuTab);
 tabSelect.appendChild(contactTab);
-
 pageContainer.appendChild(tabSelect);
+
+///content section
+const contentContainer = document.createElement("div");
+contentContainer.setAttribute("id", "contentContainer");
+pageContainer.appendChild(contentContainer);
+
+///footer
+const footer = document.createElement("div");
+footer.setAttribute("id", "footer");
+const footerContent = document.createElement("p");
+footerContent.textContent = "created by Timothy";
+footer.appendChild(footerContent);
+pageContainer.appendChild(footer);
+//event listeners
+homeTab.addEventListener("click", homePage);
+menuTab.addEventListener("click", menuPage);
+contactTab.addEventListener("click", contactPage);
+
+homePage();
+function homePage() {
+  setFocus(homeTab);
+  removeFocus(menuTab);
+  removeFocus(contactTab);
+  if (contentContainer.childElementCount > 0) {
+    const content = document.querySelector(".content");
+    contentContainer.removeChild(content);
+  }
+  contentContainer.appendChild((0,_index_js__WEBPACK_IMPORTED_MODULE_2__["default"])());
+}
+
+function menuPage() {
+  setFocus(menuTab);
+  removeFocus(homeTab);
+  removeFocus(contactTab);
+  if (contentContainer.childElementCount > 0) {
+    const content = document.querySelector(".content");
+    contentContainer.removeChild(content);
+  }
+}
+
+function contactPage() {
+  setFocus(contactTab);
+  removeFocus(menuTab);
+  removeFocus(homeTab);
+}
+
+function setFocus(tab) {
+  tab.classList.add("currentTab");
+}
+function removeFocus(tab) {
+  tab.classList.remove("currentTab");
+}
 
 })();
 

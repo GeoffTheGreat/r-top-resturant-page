@@ -1,3 +1,11 @@
+:root {
+  --cardGreen: #80d980;
+  --veryLightGreen: #ccf0cc;
+  --mjLightGreen: #00b200;
+  --mjDarkGreen: #009700;
+}
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,17 +14,69 @@
 #container {
   display: flex;
   flex-direction: column;
+  background-color: var(--veryLightGreen);
 }
 #tabNavigation {
   display: grid;
   grid-template-columns: repeat(3, auto);
   gap: 5px;
-  /* justify-self: center; */
-  align-self: center;
-  height: 10vh;
+  min-height: 8vh;
   justify-content: center;
-  align-items: center;
+
+  position: sticky;
+  top: 0;
+  background-color: var(--mjDarkGreen);
+  color: #000800;
+  font-family: "Permanent Marker", sans-serif;
 }
 .tabNav {
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 16px;
+  cursor: pointer;
+}
+.tabNav:hover {
+  background-color: var(--mjLightGreen);
+  color: black;
+}
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 6.5vh;
+
+  background-color: var(--mjDarkGreen);
+  font-family: "Permanent Marker", sans-serif;
+  padding: 5px;
+}
+.currentTab {
+  background-color: var(--mjLightGreen);
+  background-image: url("../assets/mj.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#contentContainer {
+  font-family: "Roboto Flex";
+  font-weight: 400;
+  min-height: 84vh;
+}
+.content {
+  width: 80%;
+  margin: 10px auto;
+  text-align: center;
+  background-color: var(--cardGreen);
+  border-radius: 10px;
+  border: 2px double #000800;
+  padding: 20px;
+}
+.restName {
+  font-family: "Permanent Marker", sans-serif;
+  margin-bottom: 20px;
+}
+.about p,
+.about h3 {
+  margin-bottom: 10px;
 }
