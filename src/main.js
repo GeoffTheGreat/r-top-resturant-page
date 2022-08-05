@@ -2,11 +2,14 @@
 import mjLeaf from "./assets/mj.svg";
 import "./styles/styles.css";
 import index from "./index.js";
+import menu from "./menu.js";
+import contact from "./contact.js";
 
 ///get the main dom element #container
 const pageContainer = document.getElementById("container");
 
 //tab navigation section
+
 const tabSelect = document.createElement("div");
 tabSelect.setAttribute("id", "tabNavigation");
 const homeTab = document.createElement("div");
@@ -43,7 +46,7 @@ homeTab.addEventListener("click", homePage);
 menuTab.addEventListener("click", menuPage);
 contactTab.addEventListener("click", contactPage);
 
-homePage();
+contactPage();
 function homePage() {
   setFocus(homeTab);
   removeFocus(menuTab);
@@ -63,12 +66,18 @@ function menuPage() {
     const content = document.querySelector(".content");
     contentContainer.removeChild(content);
   }
+  contentContainer.appendChild(menu());
 }
 
 function contactPage() {
   setFocus(contactTab);
   removeFocus(menuTab);
   removeFocus(homeTab);
+  if (contentContainer.childElementCount > 0) {
+    const content = document.querySelector(".content");
+    contentContainer.removeChild(content);
+  }
+  contentContainer.appendChild(contact());
 }
 
 function setFocus(tab) {

@@ -9,6 +9,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 #container {
@@ -16,6 +17,7 @@
   flex-direction: column;
   background-color: var(--veryLightGreen);
 }
+
 #tabNavigation {
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -72,11 +74,101 @@
   border: 2px double #000800;
   padding: 20px;
 }
+.restHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 .restName {
   font-family: "Permanent Marker", sans-serif;
-  margin-bottom: 20px;
+}
+.logo {
+  max-height: 3em;
 }
 .about p,
 .about h3 {
-  margin-bottom: 10px;
+  margin: 10px;
+}
+.about,
+.menuItem,
+.contactItem {
+  background-color: var(--veryLightGreen);
+  border: 2px double #000800;
+  border-radius: 10px;
+  margin: 10px;
+}
+.contactItem {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 2px solid black;
+  gap: 10px;
+}
+.tradingHrs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tradingList {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: start;
+  list-style: none;
+  margin-bottom: 5px;
+}
+.foodHeader,
+.beverageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Permanent Marker", sans-serif;
+  gap: 10px;
+}
+
+.foodSection,
+.beverageSection {
+  background-color: var(--mjLightGreen);
+  padding: 10px;
+  border-radius: 10px;
+}
+.menuItem {
+  display: flex;
+  padding: 2vw;
+  gap: 2rem;
+  text-align: left;
+}
+.itemDescription {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+.imgSection {
+  width: 50%;
+
+  /* border: 2px solid black; */
+}
+.itemImg {
+  border-radius: 10px;
+  border: 5px solid var(--mjDarkGreen);
+  width: 100%;
+  height: 100%;
+  box-shadow: 2px 2px 2px black, -2px -2px 2px #004700;
+}
+.itemSet,
+.beverageItemSet {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 0.3fr;
+}
+.gridHeading {
+  grid-column: 1/-1;
+}
+.menuContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
