@@ -1305,7 +1305,7 @@ homeTab.addEventListener("click", homePage);
 menuTab.addEventListener("click", menuPage);
 contactTab.addEventListener("click", contactPage);
 
-contactPage();
+homePage();
 function homePage() {
   setFocus(homeTab);
   removeFocus(menuTab);
